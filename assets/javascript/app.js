@@ -11,7 +11,6 @@
   
   var database = firebase.database();
 
- var eventfulURL = "http://eventful.com/events?q=" + location + "xsznpdJsqBSBM6xz";
  var currentConditionsUrl = "http://dataservice.accuweather.com/currentconditions/v1"+ location + "A9IYPehiyBlSicaf0AMQF9lZsMQMnLnH";
- var forecastConditions = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + location + "A9IYPehiyBlSicaf0AMQF9lZsMQMnLnH";
- var grouponUrl = "";
+ var forecastConditionsUrl = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + location + "A9IYPehiyBlSicaf0AMQF9lZsMQMnLnH";
+ var eventbrite = "https://www.eventbriteapi.com/v3/events/search/?location.address=" + location + "&location.within=10mi&token=K4DUF7V3GIFZDMZYFH57"
