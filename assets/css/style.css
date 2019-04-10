@@ -1,3 +1,74 @@
-h5 {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 20s ease-in-out infinite; 
+    background-size: cover;
+
+}
+
+.load{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes animate {
+
+    0%, 100% {
+        background-image: url('./images/imgg1.jpg')
+    }
+
+    20% {
+        background-image: url('./images/img02.jpg')
+    }
+    40%{
+        background-image: url('./images/img03.jpg')
+    }
+
+    60% {
+        background-image: url('./images/img4.jpg')
+    }
+
+    80% {
+        background-image: url('./images/img05.jpg')
+    }
+
+}
+
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+    height: 20%;
+}
+
+.logo {
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+h5, h4 {
     text-align: center;
+    color: white;
+    font-weight: 200;
+    padding: 5px;
+    font-style: initial;
+}
+
+body{
+    background-color: rgb(153, 142, 142);
+}
+
+.card-header{
+    background-color: rgb(199, 206, 214);
 }
