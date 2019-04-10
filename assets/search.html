@@ -9,6 +9,8 @@
     <link rel="icon" type="img/png" href="./css/images/9e7e0825-6e41-4c25-8427-2a0cb32d48be.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+        <!-- Firebase Link -->
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
 
 </head>
 
@@ -45,11 +47,11 @@
                     <h4>Search a Location for Different Events</h4>
                 </div><br>
                 <div class="col-10">
-                    <input class="form-control" type="search" placeholder="Location" aria-label="Search">
+                    <input class="form-control" type="search" placeholder="Location" aria-label="Search" id="location-input">
                 </div>
                 <div class="col-2">
-                    <a href="./assets/search.html"><button class="btn btn-outline-success"
-                            type="submit">Search</button></a>
+                    <button class="btn btn-outline-success"
+                            type="submit" id="search-btn">Search</button>
                 </div>
             </div>
         </form>
@@ -160,10 +162,11 @@
 
 
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/app.js"></script>
 
 </body>
 
