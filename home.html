@@ -28,7 +28,7 @@
                         <a class="nav-link" href="#">Pricing</a>
                     </li>
                 </ul>
-                <a class="navbar-brand" href="#">Navbar w/ text</a>
+                <a class="navbar-brand" href="#">goOUT</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,17 +40,16 @@
         </nav>
     </div><br>
     <div class="container">
-        <form class="form">
+        <form class="form" action="assets/search.html">
             <div class="row">
                 <div class="row">
                     <h4>Search a Location for Different Events</h4>
                 </div><br>
                 <div class="col-10">
-                    <input class="form-control" type="search" placeholder="Location" aria-label="Search">
+                    <input class="form-control" type="search" placeholder="Location like city/state" aria-label="Search" id="location-input">
                 </div>
                 <div class="col-2">
-                    <a href="./assets/search.html"><button class="btn btn-outline-success"
-                            type="submit">Search</button></a>
+                    <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
                 </div>
             </div>
         </form>
@@ -64,14 +63,13 @@
                     <div class="card" style="width: 18rem;">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <h5 class="card-title" id="title-display1">Card title</h5>
+                            <p class="card-text" id="info-display1">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
                         </div>
                         <div class="card-body">
                             <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
                 </div>
@@ -79,14 +77,13 @@
                     <div class="card" style="width: 18rem;">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <h5 class="card-title" id="title-display2">Card title</h5>
+                            <p class="card-text" id="info-display2">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
                         </div>
                         <div class="card-body">
                             <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
                 </div>
@@ -94,14 +91,13 @@
                     <div class="card" style="width: 18rem;">
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <h5 class="card-title" id="title-display3">Card title</h5>
+                            <p class="card-text" id="info-display2">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
                         </div>
                         <div class="card-body">
                             <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
                 </div>
@@ -179,8 +175,10 @@
 
             </div>
         </div>
+    </div><br><br>
+    <div class="card-footer">
+        © 2019 Debug Entity
     </div>
-
 
 
 
