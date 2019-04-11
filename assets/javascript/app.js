@@ -1,4 +1,3 @@
-
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyAEgbnDaSU0YcCQ3YR0XkDeJ3IEpKA87OI",
@@ -11,24 +10,31 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
-
-// var currentConditionsUrl =
-//   "http://dataservice.accuweather.com/currentconditions/v1" +
-//   location +
-//   "A9IYPehiyBlSicaf0AMQF9lZsMQMnLnH";
-// var forecastConditionsUrl =
-//   "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" +
-//   location +
-//   "A9IYPehiyBlSicaf0AMQF9lZsMQMnLnH";
+// API URLS (can move them into functions if desired)
+var foursquareUrl =
+  "https://api.foursquare.com/v2/venues/search?near=" +
+  myLocation +
+  "&client_id=4T1KZV0MFURUT2KMWDORDZQL23ULXHEHE1LPUGHFP1PP023O&client_secret=YSZAY3ZWOOEGOHAV31BHFUJGAERZLOAICUTRNEA2FOZQJG0I&v=20180323&limit=10";
+var currentConditionsUrl =
+  "http://dataservice.accuweather.com/currentconditions/v1" +
+  myLocation +
+  "A9IYPehiyBlSicaf0AMQF9lZsMQMnLnH";
+var forecastConditionsUrl =
+  "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" +
+  myLocation +
+  "A9IYPehiyBlSicaf0AMQF9lZsMQMnLnH";
 
 $("#location-search").on("click", function(event) {
   console.log("Clicked...");
-  
+
   event.preventDefault();
-  var myLocation = $("#the-real-location").val().trim();
+  var myLocation = $("#the-real-location")
+    .val()
+    .trim();
   console.log(myLocation);
   var eventbriteURL =
-    "https://www.eventbriteapi.com/v3/events/search/?location.address=" + myLocation +
+    "https://www.eventbriteapi.com/v3/events/search/?location.address=" +
+    myLocation +
     "&location.within=10mi&token=S5ODNTLSPUBRNVOLMPSS";
   ajaxCall(eventbriteURL);
   console.log(eventbriteURL);
@@ -36,7 +42,7 @@ $("#location-search").on("click", function(event) {
 
 function ajaxCall(url) {
   console.log("ajaxCall...");
-  
+
   $.ajax({
     url: url,
     method: "GET"
