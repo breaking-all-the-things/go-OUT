@@ -1,11 +1,3 @@
-body {
-    background-color: yellow;
-}    
-
-*{
-    margin: 0;
-    padding: 0;
-}
 
 .slider{
     position: absolute;
@@ -29,22 +21,22 @@ body {
 @keyframes animate {
 
     0%, 100% {
-        background-image: url('./images/imgg1.jpg')
+        background-image: url('assets/images/imgg1.jpg')
     }
 
     20% {
-        background-image: url('./images/img02.jpg')
+        background-image: url('assets/images/img02.jpg')
     }
     40%{
-        background-image: url('./images/img03.jpg')
+        background-image: url('assets/images/img03.jpg')
     }
 
     60% {
-        background-image: url('./images/img4.jpg')
+        background-image: url('assets/images/img4.jpg')
     }
 
     80% {
-        background-image: url('./images/img05.jpg')
+        background-image: url('assets/images/img05.jpg')
     }
 
 }
